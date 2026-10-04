@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Twin Cities Animal Rescue</title>
+    <title>Contact | Twin Cities Animal Rescue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <h1>Contact Twin Cities Animal Rescue</h1>
+        <p>Helping animals find safe, loving, forever homes.</p>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -26,9 +30,9 @@
             <h2>Get in Touch</h2>
 
             <p>
-                Have a question about adoption, volunteering, or helping an animal
-                in need? We would love to hear from you! Give us a call, send us
-                an email, or stop by!
+                Have a question about adoption, volunteering, or helping an
+                animal in need? We would love to hear from you! Give us a call,
+                send us an email, or stop by.
             </p>
 
             <p>
@@ -43,25 +47,37 @@
             <p>
                 <strong>Location:</strong> Twin Cities, Minnesota
             </p>
+
+            <img
+                src="media/rescue-logo_c.png"
+                alt="Twin Cities Animal Rescue logo">
         </section>
 
         <section>
             <h2>Send Us a Message</h2>
 
-            <form>
+         <form action="#" method="post">
 
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+    <fieldset>
+        <legend>Contact Information</legend>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autocomplete="name">
+        <p id="name-error" class="form-error" aria-live="polite"></p>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5"></textarea><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+        <p id="email-error" class="form-error" aria-live="polite"></p>
 
-                <button type="submit">Send Message</button>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <p id="message-error" class="form-error" aria-live="polite"></p>
 
-            </form>
+        <button type="submit">Send Message</button>
+    </fieldset>
+
+</form>
+            
         </section>
 
     </main>
@@ -71,5 +87,4 @@
     </footer>
 
 </body>
-
 </html>

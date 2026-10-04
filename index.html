@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Twin Cities Animal Rescue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+
     <header>
         <h1>Twin Cities Animal Rescue</h1>
         <p>Helping animals find safe, loving, forever homes.</p>
+
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
@@ -19,50 +24,95 @@
         </nav>
     </header>
 
-    <video controls>
-        <source src="media/rescue-message.mp4" type="video/mp4">
-        Your browser does not support the video element.
-    </video>
-
-    <audio controls>
-        <source src="media/rescue-message_c.mp3" type="audio/mpeg">
-    </audio>
-    
     <main>
+
         <section>
-            <h2>Give an animal a fresh start</h2>
-            <p>Every animal deserves a chance to find a caring home. Explore ways to adopt, foster,
-                 or volunteer with our rescue.
+            <h2>Give an Animal a Fresh Start</h2>
+
+            <p>
+                Every animal deserves a chance to find a caring home. Explore ways
+                to adopt, foster, or volunteer with Twin Cities Animal Rescue.
             </p>
-            <p><a href="services.html">Learn about our services</a></p>
+
+            <p>
+                <a href="services.html">Learn about our services</a>
+            </p>
+
+            <figure>
+                <picture>
+                    <source
+                        media="(min-width: 700px)"
+                        srcset="media/rescue-feature-large_c.png">
+                    <img
+                        src="media/rescue-feature-small_c.png"
+                        alt="Rescue pet looking for a loving forever home">
+                </picture>
+
+                <figcaption>
+                    A rescue pet looking for a loving forever home.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+
+            <p>
+                Twin Cities Animal Rescue is dedicated to helping animals find
+                safe, loving, forever homes. By connecting our community with
+                opportunities to adopt, foster, and volunteer, we give animals
+                their best chance at finding the perfect family.
+            </p>
+        </section>
+
+        <section>
+            <h2>Be Part of the Rescue</h2>
+
+            <p>
+                Whether you can offer a permanent home, temporary care, or a
+                helping hand, your support can make a difference.
+            </p>
+
+            <p>
+                <a href="contact.html">Get in touch</a> or
+                <a href="about.html">learn more about us</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Hear From Twin Cities Animal Rescue</h2>
+
+            <p>
+                Learn more about our rescue through the following message.
+            </p>
+
+            <video controls>
+                <source src="media/rescue-message_c.mp4" type="video/mp4">
+                Your browser does not support the video element.
+                Please visit our Services or Contact page to learn more about
+                Twin Cities Animal Rescue.
+            </video>
+
+            <audio controls>
+                <source src="media/rescue-message_c.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                Please visit our Services or Contact page to learn more about
+                Twin Cities Animal Rescue.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Find a Pet to Love</h2>
+            <p>Choose a rescue pet you are interested in learning more about.</p>
+            <div id="pet-interest"></div>
+            <p id="interest-result" aria-live="polite"></p>
+        </section>
         
-        <figure>
-            <picture>
-                <source media ="(min-width: 700px)"srcset="media/rescue-feature-large_c.png">
-                <img src="media/rescue-feature-small_c.png" alt="A rescue pet looking for a loving home">
-            </picture>
-            <figcaption>A rescue pet looking for a loving home</figcaption>
-        </figure>
-        </section>
-
-        <section>
-            <h2>Our mission</h2>
-            <p>Twin Cities Animal Rescue is dedicated to helping animals find safe, loving, 
-                forever homes. By connecting our community with opportunities to adopt, 
-                foster, and volunteer, we give animals their best chance at finding 
-                the perfect family.
-            </p>
-        </section>
-
-        <section>
-            <h2>Be part of the rescue</h2>
-            <p>Whether you can offer a permanent home, temporary care, or a helping hand, your support can make a difference.</p>
-            <p><a href="contact.html">Get in touch</a> or <a href="about.html">learn more about us</a>.</p>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; Twin Cities Animal Rescue</p>
+        <p>&copy; 2026 Twin Cities Animal Rescue</p>
     </footer>
+
 </body>
 </html>
